@@ -1,3 +1,22 @@
+@keyframes typing {
+  from {
+  	width: 0;
+  }
+  to {
+  	width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+  	border-color: transparent;
+  }
+  50% {
+  	border-color: var(--primary);
+  }
+}
+
+
 :root{
 	--primary: #f25a55;
 	--light: #fffee3;
@@ -8,7 +27,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .bg{
@@ -23,6 +41,7 @@
 
 .navbar{
 	padding: 3;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-toggler:focus{
@@ -40,6 +59,36 @@
 
 .nav-item a.is-active, .nav-item a:hover{
 	background-color: var(--light);
+}
+
+.intro-text{
+	font-family: 'Bebas Neue', cursive;	
+	width: 90%;
+	background-color: var(--dark);
+	color: var(--primary);
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.intro-text h1{
+	font-size: 100px;
+}
+
+.intro-text span{
+	font-size: 50px;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .07em solid var(--primary); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 @media(max-width:768px){
