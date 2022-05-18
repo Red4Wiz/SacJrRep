@@ -39,10 +39,8 @@ body {
 	background-color: var(--accentred);
 }
 
-.logo-text{
-	color: var(--black);
-	font-size: 28px;
-	font-weight: 900;
+.logo{
+	left: 50px;
 }
 
 .navbar{
@@ -76,7 +74,7 @@ body {
 	padding: 30px;
 
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
@@ -89,7 +87,7 @@ body {
 
 .intro-text span{
 	color: var(--black);
-	font-size: 50px;
+	font-size: 60px;
 }
 
 .typewriter {
