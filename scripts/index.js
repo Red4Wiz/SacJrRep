@@ -7,8 +7,6 @@ function TxtType(element, toRotate, period) {
     this.isDeleting = false;
 
     this.tick = function() {
-        console.log('asdf');
-
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 

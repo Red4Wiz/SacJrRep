@@ -12,15 +12,23 @@
   	border-color: transparent;
   }
   50% {
-  	border-color: var(--primary);
+  	border-color: var(--red);
   }
 }
 
 
 :root{
-	--primary: #f25a55;
-	--light: #fffee3;
-	--dark: #f5ce5b;
+	/*
+	--red: #d9414b;
+	--background: #6ea6db;
+	--nav: #3e5ca7ff;
+	--accentblue: #5599d9;
+	--black: #171717;
+	*/
+	--background: #D9A684;
+	--red: #d9414b;
+	--accentred: #DB8D65;
+	--black: #171717;
 }
 
 * {
@@ -29,12 +37,16 @@
 	box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background);
+}
+
 .bg{
-	background-color: var(--dark);
+	background-color: var(--red);
 }
 
 .logo-text{
-	color: var(--primary);
+	color: var(--black);
 	font-size: 28px;
 	font-weight: 900;
 }
@@ -49,7 +61,7 @@
 }
 
 .nav-item a{
-	color: var(--primary);
+	color: var(--black);
 	font-weight: 600;
 	text-decoration: none;
 	transition: 0.4s;
@@ -58,14 +70,18 @@
 }
 
 .nav-item a.is-active, .nav-item a:hover{
-	background-color: var(--light);
+	background-color: white;
 }
 
 .intro-text{
 	font-family: 'Bebas Neue', cursive;	
+	
+	background-color: var(--accentred);
+	color: var(--black);
+	
 	width: 90%;
-	background-color: var(--dark);
-	color: var(--primary);
+	padding: 30px;
+
 	position: absolute;
 	top: 40%;
 	left: 50%;
@@ -83,7 +99,7 @@
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .07em solid var(--primary); /* The typwriter cursor */
+  border-right: .07em solid var(--red); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
