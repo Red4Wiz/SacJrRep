@@ -12,23 +12,17 @@
   	border-color: transparent;
   }
   50% {
-  	border-color: var(--red);
+  	border-color: var(--contrast);
   }
 }
 
 
 :root{
-	/*
-	--red: #d9414b;
-	--background: #6ea6db;
-	--nav: #3e5ca7ff;
-	--accentblue: #5599d9;
-	--black: #171717;
-	*/
-	--background: #D9A684;
-	--red: #d9414b;
-	--accentred: #DB8D65;
-	--black: #171717;
+	--red: #C96567;
+	--black: #314455;
+	--background: #B64856;
+	--contrast: #5A87BE;
+	--accentred: #755b6b;
 }
 
 * {
@@ -42,7 +36,7 @@ body {
 }
 
 .bg{
-	background-color: var(--red);
+	background-color: var(--accentred);
 }
 
 .logo-text{
@@ -76,8 +70,7 @@ body {
 .intro-text{
 	font-family: 'Bebas Neue', cursive;	
 	
-	background-color: var(--accentred);
-	color: var(--black);
+	background-color: var(--red);
 	
 	width: 90%;
 	padding: 30px;
@@ -90,16 +83,18 @@ body {
 }
 
 .intro-text h1{
+	color: black;
 	font-size: 100px;
 }
 
 .intro-text span{
+	color: var(--black);
 	font-size: 50px;
 }
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .07em solid var(--red); /* The typwriter cursor */
+  border-right: .07em solid var(--contrast); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
