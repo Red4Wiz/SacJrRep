@@ -100,6 +100,60 @@ body {
     blink-caret .75s step-end infinite;
 }
 
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--accentred);
+	height: auto;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px;
+}
+
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	color: var(--red);
+}
+
+.footer-content p{
+	max-width: 80%;
+	margin: 10px auto;
+	font-size: 14px;
+}
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*margin: 1rem 0 3rem 0;*/
+
+}
+
+.socials li{
+	margin: 0 10px;
+}
+
+.socials a{
+	text-decoration: none;
+	color: var(--red);
+}
+
+.socials a i{
+	font-size: 1.1rem;
+}
+
+.socials a:hover i{
+	font-size: 1.3rem;
+	transition: .4s ease;
+}
+
 @media(max-width:768px){
 	.ul-bg{
 		background-color: #fad978;
