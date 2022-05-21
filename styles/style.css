@@ -1,3 +1,12 @@
+@font-face {
+	font-family: bebas-neue;
+	src: url('../assets/fonts/BebasNeue-Regular.ttf') format("truetype"),
+		 url('../assets/fonts/BebasNeue-Regular.otf') format("opentype"),
+		 url('../assets/fonts/BebasNeue-Regular.eot') format("embedded-opentype"),
+		 url('../assets/fonts/BebasNeue-Regular.woff') format("woff"),
+		 url('../assets/fonts/BebasNeue-Regular.woff2') format("woff2");
+}
+
 @keyframes typing {
   from {
   	width: 0;
@@ -26,16 +35,14 @@
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
 }
 
 body {
   background-color: var(--background);
 }
 
-.bg{
+.bg {
 	background-color: var(--accentred);
 }
 
@@ -65,46 +72,29 @@ body {
 	background-color: white;
 }
 
-.intro-text{
-	font-family: 'Bebas Neue', cursive;	
-	
+.intro-text {
+	font-family: bebas-neue;	
 	background-color: var(--red);
-	
-	width: 90%;
-	padding: 30px;
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
 	text-align: center;
-}
-
-.intro-text h1{
-	color: black;
-	font-size: 100px;
-}
-
-.intro-text span{
-	color: var(--black);
-	font-size: 60px;
+	font-size: 10vw;
+	line-height: 80%;
+	padding-top: 5%;
 }
 
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .07em solid var(--contrast); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+	font-size: 6vw;
+	color: var(--black);
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .07em solid var(--contrast); /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin-left: 0 auto; /* Gives that scrolling effect as the typing happens */
+	margin-right: 0 auto;
+	animation: 
+		typing 3.5s steps(40, end),
+		blink-caret .75s step-end infinite;
 }
 
-footer{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+footer {
 	background: var(--accentred);
 	height: auto;
 	width: 100%;
@@ -158,4 +148,10 @@ footer{
 	.ul-bg{
 		background-color: #fad978;
 	}
+}
+
+.main-container {
+	margin: auto;
+	padding: 15%;
+	padding-top: 5%;
 }
