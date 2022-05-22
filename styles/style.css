@@ -7,6 +7,11 @@
 		 url('../assets/fonts/BebasNeue-Regular.woff2') format("woff2");
 }
 
+@font-face {
+	font-family: azonix;
+	src: url('../assets/fonts/Azonix.otf') format("opentype");
+}
+
 @keyframes typing {
   from {
   	width: 0;
@@ -36,6 +41,24 @@
 
 * {
 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 body {
@@ -300,37 +323,25 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding: 2%;
+	background: var(--background);
 }
 
-form{
-	background-color: var(--accentred);
+.slogan{
+
+	width: 100%;
+	border-radius: 20px;
+	margin: auto;
+	margin-bottom: 5%;
+	margin-top: -10%;
+	padding: 2%;
+
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	padding: 2vw 4vw;
-	width: 90%;
-	max-width: 600px;
-	border-radius: 10px;
-}
+	text-align: center;
 
-form input, form textarea{
-	border: 0;
-	margin: 10px 0;
-	padding: 20px;
-	outline: none;
-	background: var(--red);
-	color: var(--black);
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-}
-
-form button{
-	padding: 15px;
-	background: var(--contrast);
+	font-family: azonix;
 	color: white;
-	border: 0;	
-	outline: none;
-	cursor: pointer;
-	width: 30%;
-	margin: 20px auto 0;
-	border-radius: 30px;
+	background-color: var(--black);
 }
