@@ -179,7 +179,7 @@ footer {
 	padding-top: 5%;
 }
 
-.initiatives-header {
+.page-header {
 	margin: auto;
 	padding: 5%;
 
@@ -193,7 +193,7 @@ footer {
 	background-color: var(--black);
 }
 
-.initiatives-header h1{
+.page-header h1{
 	font-family: bebas-neue;	
 	font-size: 8vw;
 }
@@ -258,6 +258,23 @@ footer {
 }
 
 .third-initiative-text{
+	width: 60%;
+	margin-left: 5%;
+}
+
+.fifth-initiative{
+	margin: 0 auto;
+	padding: 5%;
+	padding-top: 5%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	background-color: var(--red);
+}
+
+.fifth-initiative-text{
 	width: 60%;
 	margin-left: 5%;
 }
