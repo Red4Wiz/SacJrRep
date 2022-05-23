@@ -336,6 +336,10 @@ footer {
 	background-color: var(--black);
 }
 
+.initiatives p{
+	font-size: 20px;
+}
+
 .item {
 	display: flex;
 	text-align: left;
@@ -364,10 +368,15 @@ footer {
 
 .item-title {
 	font-family: azonix;
-	font-size: 500%;
+	font-size: 400%;
+}
+
+.item-grade {
+	font-family: azonix;
+	font-size: 200%;
 }
 
 .item-text {
-	font-size: 200%;
+	font-size: 150%;
 	height: fit-content;
 }
