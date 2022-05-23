@@ -366,3 +366,39 @@ footer {
 .initiatives p{
 	font-size: 20px;
 }
+
+.item {
+	display: flex;
+	text-align: left;
+	height: fit-content;
+	margin: 5%;
+	margin-bottom: 0;
+	height: fit-content;
+
+
+	background-color: #c5d0d9;
+	color: var(--black);
+	border-radius: 10px;
+	box-shadow: 0 30px 50px -30px #aaa;
+
+	transition: .3s;
+}
+
+.item:hover {
+	transform: scale(1.02);
+}
+
+.item-info {
+	padding: 3%;
+	margin-right: auto;
+}
+
+.item-title {
+	font-family: azonix;
+	font-size: 500%;
+}
+
+.item-text {
+	font-size: 200%;
+	height: fit-content;
+}
