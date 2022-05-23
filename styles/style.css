@@ -362,3 +362,7 @@ footer {
 	color: white;
 	background-color: var(--black);
 }
+
+.initiatives p{
+	font-size: 20px;
+}
