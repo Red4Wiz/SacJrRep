@@ -380,3 +380,22 @@ footer {
 	font-size: 150%;
 	height: fit-content;
 }
+
+.about-text {
+	font-family: bebas-neue;
+	font-size: 150%;
+	margin: 10%;
+	margin-top: 5%;
+	padding: 5%;
+
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 50px;
+
+	color: white;
+	background-color: var(--black);
+}
